@@ -1,11 +1,3 @@
-import { Request } from 'express';
-import { IUser } from '@entities/User';
+export const KYC_BASE_URL = 'https://australia-southeast1-reporting-290bc.cloudfunctions.net/driverlicence';
 
-
-export const paramMissingError = 'One or more of the required parameters was missing.';
-
-export interface IRequest extends Request {
-    body: {
-        user: IUser;
-    }
-} 
+export const KYC_API_KEY = "03aa7ba718da920e0ea362c876505c6df32197940669c5b150711b03650a78cf";
